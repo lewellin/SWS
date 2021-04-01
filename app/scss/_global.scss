@@ -3,6 +3,18 @@ body {
 	height: 100%;
 }
 
+.body{
+	font-size: 16px;
+	line-height: 20px;
+	font-weight: 300;
+	font-family: 'Fira Sans', sans-serif;
+	color: #fff;
+}
+
+a, p{
+	color: #fff;
+}
+
 .wrapper {
 	display: flex;
 	flex-direction: column;
@@ -17,11 +29,39 @@ body {
 }
 
 .container{
-  max-width: 1200px;
+  max-width: 1470px;
   margin: 0 auto;
   padding: 0 15px;
 }
 
+.logo{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	&-text{
+		max-width: 330px;
+	}
+}
+
+.logo__inner{
+	&-title{
+		font-weight: 500;
+		color: $blue;
+		text-align: center;
+	}
+	
+	margin-right: 60px;
+}
+
+.contacts{
+	&__list{
+		display: flex;
+		justify-content: flex-end;
+	}
+	&__item + &__item{
+        margin-left: 46px;
+    }
+}
 
 
 

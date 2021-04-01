@@ -5,3 +5,38 @@
 @import 'global';
 
 
+.header{
+    padding: 25px 0 15px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    &__inner{
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.header__top{
+    &-list{
+        display: flex;
+        align-items: center;
+    }
+    &-item + &-item{
+        margin-left: 46px;
+    }
+    &-link{
+        font-weight: 700;
+    }
+    &-documnet{
+        padding-left: 47px;
+        position: relative;
+    }
+    &-svg{
+        position: absolute;
+        left: 0;
+        top: -3px;
+    }
+    &-menu{
+        margin-bottom: 14px;
+    }
+}

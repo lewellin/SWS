@@ -5,71 +5,79 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
-
-  <header class="header">
-    <div class="container">
-      <div class="header__inner">
-        <div class="logo">
-          <div class="logo__inner">
-            <a class="logo__inner-img">
-              <img src="../app/images/logo.svg" alt="">
-            </a>
-            <div class="logo__inner-title">
-              Smart Web Studio
+  <div class="wrapper">
+    <header class="header" style="background-image: url(../images/header.jpg);">
+      <div class="container">
+        <div class="header__inner">
+          <div class="logo">
+            <div class="logo__inner">
+              <a class="logo__inner-img">
+                <img src="../images/logo.svg" alt="">
+              </a>
+              <div class="logo__inner-title">
+                Smart Web Studio
+              </div>
             </div>
+
+            <p class="logo-text">
+              Услуги комплексного интернет-маркетинга
+              для малого и среднего бизнеса
+            </p>
           </div>
 
-          <div class="logo-text">
-            Услуги комплексного интернет-маркетинга
-            для малого и среднего бизнеса
-          </div>
-        </div>
-
-        <div class="header__top">
-          <div class="header__top-menu">
-            <ul class="header__top-list">
-              <li class="header__top-item"><a class="header__top-link" href="#">Услуги и цены</a></li>
-              <li class="header__top-item"><a class="header__top-link" href="#">Наши работы</a></li>
-              <li class="header__top-item"><a class="header__top-link" href="#">О нас</a></li>
-              <li class="header__top-item"><a class="header__top-link" href="#">Контакты</a></li>
-              <li class="header__top-item"><a class="header__top-link" href="#">Получить каталог с ценами</a></li>
-            </ul>
-          </div>
-          <div class="contacts">
-            <ul class="contacts__list">
-              <li class="contacts__item"><a class="contacts__link" href="#"
-                  type="mailto:mail@smartwebstudio.ru">mail@smartwebstudio.ru</a></li>
-              <li class="contacts__item"><a class="contacts__link" href="#">Ежедневно с 10:00 до 20:00</a></li>
-              <li class="contacts__item"><a class="contacts__link" href="#" type="tel:+74951281779">+7 (495)
-                  128-17-79</a></li>
-            </ul>
-            <div class="contacts__icons">
-              <ul class="contacts__icons-list">
-
+          <div class="header__top">
+            <div class="header__top-menu">
+              <ul class="header__top-list">
+                <li class="header__top-item"><a class="header__top-link" href="#">Услуги и цены</a></li>
+                <li class="header__top-item"><a class="header__top-link" href="#">Наши работы</a></li>
+                <li class="header__top-item"><a class="header__top-link" href="#">О нас</a></li>
+                <li class="header__top-item"><a class="header__top-link" href="#">Контакты</a></li>
+                <li class="header__top-item header__top-documnet">
+                  <svg class="header__top-svg">
+                    <use href="../images/sprite.svg#documnet"></use>
+                  </svg>
+                  <a class="header__top-link" href="#">Получить каталог с ценами</a>
+                </li>
               </ul>
             </div>
+            <div class="contacts">
+              <ul class="contacts__list">
+                <li class="contacts__item"><a class="contacts__link" href="#"
+                    type="mailto:mail@smartwebstudio.ru">mail@smartwebstudio.ru</a></li>
+                <li class="contacts__item"><a class="contacts__link" href="#">Ежедневно с 10:00 до 20:00</a></li>
+                <li class="contacts__item"><a class="contacts__link" href="#" type="tel:+74951281779">+7 (495)
+                    128-17-79</a></li>
+              </ul>
+              <div class="contacts__icons">
+                <ul class="contacts__icons-list">
+
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="header__menu">
-      <div class="container">
-        <ul class="header__menu-list">
-          <li class="header__menu-item"><a class="header__menu-link" href="#">Маркетинговая стратегия</a></li>
-          <li class="header__menu-item"><a class="header__menu-link" href="#">Создание сайтов</a></li>
-          <li class="header__menu-item"><a class="header__menu-link" href="#">Настройка рекламы</a></li>
-          <li class="header__menu-item"><a class="header__menu-link" href="#">SEO</a></li>
-          <li class="header__menu-item"><a class="header__menu-link" href="#">Автоматизация и аналитика</a></li>
-          <li class="header__menu-item"><a class="header__menu-link" href="#">Управление репутацией</a></li>
-        </ul>
+      <div class="header__menu">
+        <div class="container">
+          <ul class="header__menu-list">
+            <li class="header__menu-item"><a class="header__menu-link" href="#">Маркетинговая стратегия</a></li>
+            <li class="header__menu-item"><a class="header__menu-link" href="#">Создание сайтов</a></li>
+            <li class="header__menu-item"><a class="header__menu-link" href="#">Настройка рекламы</a></li>
+            <li class="header__menu-item"><a class="header__menu-link" href="#">SEO</a></li>
+            <li class="header__menu-item"><a class="header__menu-link" href="#">Автоматизация и аналитика</a></li>
+            <li class="header__menu-item"><a class="header__menu-link" href="#">Управление репутацией</a></li>
+          </ul>
+        </div>
       </div>
-    </div>
-  </header>
-  <div class="wrapper">
+    </header>
+
     <main class="main"></main>
     <footer class="footer"></footer>
   </div>
