@@ -5,6 +5,7 @@
 @import 'global';
 
 
+// start header
 .header{
     padding: 25px 0 15px;
     background-size: cover;
@@ -13,6 +14,7 @@
     &__inner{
         display: flex;
         justify-content: space-between;
+        margin-bottom: 22px;
     }
 }
 
@@ -43,5 +45,69 @@
     }
     &-menu{
         margin-bottom: 14px;
+    }
+}
+
+.header__menu{
+    background: rgba(17, 25, 34, 0.47);
+    padding: 21px 0;
+    
+    &-list{
+        display: flex;
+        justify-content: space-between;
+    }
+    &-link{
+        text-transform: uppercase;
+    }
+    &-item{
+        position: relative;
+        padding-right: 20px;
+    }
+    &-svg{
+        position: absolute;
+        right: 0;
+        top: 5px;
+        width: 8px;
+        height: 5px;
+    }
+}
+
+// section discuss
+
+.discuss{
+    
+    &-img{
+        width: 505px;
+        height: 303px;
+        
+    }
+    &__inner{
+        padding: 100px 76px 180px;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.discuss__form{
+    display: flex;
+    &-input + &-input{
+        margin-left: 33px;
+    }
+    &-input{
+        background-color: transparent;
+        border-bottom: 1px solid $blue;
+        padding-bottom: 13px;
+    }
+    &-input::placeholder{
+        color: #fff;
+        font-size: 16px;
+    }
+    &-button{
+        margin-left: 43px;
+        background-color: $yellow;
+        padding: 18px 33px 18px 29px;
+        font-weight: 500;
+        font-size: 14px;
+        color: #032F57;
     }
 }

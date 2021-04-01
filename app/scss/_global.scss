@@ -3,7 +3,7 @@ body {
 	height: 100%;
 }
 
-.body{
+body, a, p{
 	font-size: 16px;
 	line-height: 20px;
 	font-weight: 300;
@@ -11,8 +11,21 @@ body {
 	color: #fff;
 }
 
-a, p{
-	color: #fff;
+button {
+	padding: 0;
+	border: none;
+	font: inherit;
+	color: inherit;
+	background-color: transparent;
+	cursor: pointer;
+  }
+
+input
+{
+padding: 0;
+margin: 0;
+border: 0;
+border: none;
 }
 
 .wrapper {
@@ -71,6 +84,9 @@ a, p{
 	&__svg{
 		position: absolute;
 		left: 0;
+		top: 2px;
+		width: 20px;
+		height: 20px;
 	}
 	&__tel{
 		padding-left: 24px;
@@ -82,6 +98,35 @@ a, p{
 	}
 }
 
+
+.title{
+	margin-bottom: 57px;
+	&__main{
+		font-weight: 500;
+		font-size: 14px;
+		padding-left: 66px;
+		position: relative;
+		text-transform: uppercase;
+		color: $blue;
+		margin-bottom: 29px;
+	}
+	&__sub{
+		font-size: 38px;
+		font-weight: 300;
+		line-height: 50px;
+		max-width: 740px;
+		color: #fff;
+	}
+	&__main::after{
+		content: '';
+		position: absolute;
+		left: 0;
+		top: 6px;
+		width: 37px;
+		height: 2px;
+		background-color: #698FBB;
+	}
+}
 
 
 

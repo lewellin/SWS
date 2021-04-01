@@ -33,7 +33,7 @@
           </div>
 
           <div class="header__top">
-            <div class="header__top-menu">
+            <nav class="header__top-menu">
               <ul class="header__top-list">
                 <li class="header__top-item"><a class="header__top-link" href="#">Услуги и цены</a></li>
                 <li class="header__top-item"><a class="header__top-link" href="#">Наши работы</a></li>
@@ -41,12 +41,13 @@
                 <li class="header__top-item"><a class="header__top-link" href="#">Контакты</a></li>
                 <li class="header__top-item header__top-documnet">
                   <svg class="header__top-svg">
-                    <use href="../images/sprite.svg#documnet"></use>
+                    <use width="24" height="24" fill="none" viewBox="0 0 24 24" href="../images/sprite.svg#documnet">
+                    </use>
                   </svg>
                   <a class="header__top-link" href="#">Получить каталог с ценами</a>
                 </li>
               </ul>
-            </div>
+            </nav>
             <div class="contacts">
               <ul class="contacts__list">
                 <li class="contacts__item">
@@ -77,18 +78,73 @@
           </div>
         </div>
       </div>
-      <div class="header__menu">
+      <nav class="header__menu">
         <div class="container">
           <ul class="header__menu-list">
-            <li class="header__menu-item"><a class="header__menu-link" href="#">Маркетинговая стратегия</a></li>
-            <li class="header__menu-item"><a class="header__menu-link" href="#">Создание сайтов</a></li>
-            <li class="header__menu-item"><a class="header__menu-link" href="#">Настройка рекламы</a></li>
-            <li class="header__menu-item"><a class="header__menu-link" href="#">SEO</a></li>
-            <li class="header__menu-item"><a class="header__menu-link" href="#">Автоматизация и аналитика</a></li>
-            <li class="header__menu-item"><a class="header__menu-link" href="#">Управление репутацией</a></li>
+            <li class="header__menu-item">
+              <svg class="header__menu-svg">
+                <use xlink:href="../images/sprite.svg#arrow"></use>
+              </svg>
+              <a class="header__menu-link" href="#">Маркетинговая стратегия</a>
+            </li>
+            <li class="header__menu-item">
+              <svg class="header__menu-svg">
+                <use xlink:href="../images/sprite.svg#arrow"></use>
+              </svg>
+              <a class="header__menu-link" href="#">Создание сайтов</a>
+            </li>
+            <li class="header__menu-item">
+              <svg class="header__menu-svg">
+                <use xlink:href="../images/sprite.svg#arrow"></use>
+              </svg>
+              <a class="header__menu-link" href="#">Настройка рекламы</a>
+            </li>
+            <li class="header__menu-item">
+              <svg class="header__menu-svg">
+                <use xlink:href="../images/sprite.svg#arrow"></use>
+              </svg>
+              <a class="header__menu-link" href="#">SEO</a>
+            </li>
+            <li class="header__menu-item">
+              <svg class="header__menu-svg">
+                <use xlink:href="../images/sprite.svg#arrow"></use>
+              </svg>
+              <a class="header__menu-link" href="#">Автоматизация и аналитика</a>
+            </li>
+            <li class="header__menu-item">
+              <svg class="header__menu-svg">
+                <use xlink:href="../images/sprite.svg#arrow"></use>
+              </svg>
+              <a class="header__menu-link" href="#">Управление репутацией</a>
+            </li>
           </ul>
         </div>
-      </div>
+      </nav>
+
+      <section class="discuss">
+        <div class="container">
+          <div class="discuss__inner">
+            <div class="discuss__content">
+              <div class="title">
+                <div class="title__main">
+                  Весь интернет-маркетинг в одних руках
+                </div>
+                <div class="title__sub">
+                  Увеличим поток качественных клиентов из интернета для вашего бизнеса за 30
+                  дней. 100% гарантия результата!
+                </div>
+              </div>
+              <form class="discuss__form" action="">
+                <input class="discuss__form-input" type="text" placeholder="Ваше имя">
+                <input class="discuss__form-input" type="text" placeholder="Ваш телефон">
+                <button class="discuss__form-button">Давайте обсудим</button>
+              </form>
+            </div>
+            <img class="discuss-img" src="../images/content/graph.png" alt="">
+          </div>
+        </div>
+      </section>
+
     </header>
 
     <main class="main"></main>
