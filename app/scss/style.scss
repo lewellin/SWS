@@ -22,6 +22,7 @@
     &-list{
         display: flex;
         align-items: center;
+        justify-content: flex-end;
     }
     &-item + &-item{
         margin-left: 46px;

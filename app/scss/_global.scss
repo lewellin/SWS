@@ -67,9 +67,11 @@ border: none;
 }
 
 .contacts{
+	display: flex;
 	&__list{
 		display: flex;
 		justify-content: flex-end;
+		margin-right: 46px;
 	}
 	&__item + &__item{
         margin-left: 46px;
@@ -128,5 +130,17 @@ border: none;
 	}
 }
 
+.contacts__icons{
+	&-list{
+		display: flex;
+	}
+	&-item + &-item{
+		margin-left: 11px;
+	}
+	&-svg{
+		width: 26px;
+		height: 26px;
+	}
+}
 
 
