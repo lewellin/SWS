@@ -1,70 +1,69 @@
-@import 'vars';
-@import 'fonts';
-@import 'reset';
-@import 'libs';
-@import 'global';
-
+@import "vars";
+@import "fonts";
+@import "reset";
+@import "libs";
+@import "global";
 
 // start header
-.header{
+.header {
     padding: 25px 0 15px;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    &__inner{
+    &__inner {
         display: flex;
         justify-content: space-between;
         margin-bottom: 22px;
     }
 }
 
-.header__top{
-    &-list{
+.header__top {
+    &-list {
         display: flex;
         align-items: center;
         justify-content: flex-end;
     }
-    &-item + &-item{
+    &-item + &-item {
         margin-left: 46px;
     }
-    &-link{
+    &-link {
         font-weight: 700;
     }
-    &-documnet{
+    &-documnet {
         padding-left: 47px;
         position: relative;
-        a{
+        a {
             color: $yellow;
         }
     }
-    &-svg{
+    &-svg {
         position: absolute;
         left: 0;
         top: -3px;
         width: 24px;
         height: 24px;
     }
-    &-menu{
+    &-menu {
         margin-bottom: 14px;
     }
 }
 
-.header__menu{
+.header__menu {
     background: rgba(17, 25, 34, 0.47);
     padding: 21px 0;
-    
-    &-list{
+
+    &-list {
         display: flex;
         justify-content: space-between;
     }
-    &-link{
+    &-link {
         text-transform: uppercase;
     }
-    &-item{
+    &-item {
         position: relative;
         padding-right: 20px;
     }
-    &-svg{
+    &-svg {
         position: absolute;
         right: 0;
         top: 5px;
@@ -75,40 +74,114 @@
 
 // section discuss
 
-.discuss{
-    
-    &-img{
+.discuss {
+    &-img {
         width: 505px;
         height: 303px;
-        
     }
-    &__inner{
+    &__inner {
         padding: 100px 76px 180px;
         display: flex;
         justify-content: space-between;
     }
 }
 
-.discuss__form{
+.discuss__form {
     display: flex;
-    &-input + &-input{
+    &-input + &-input {
         margin-left: 33px;
     }
-    &-input{
+    &-input {
         background-color: transparent;
         border-bottom: 1px solid $blue;
         padding-bottom: 13px;
     }
-    &-input::placeholder{
+    &-input::placeholder {
         color: #fff;
         font-size: 16px;
     }
-    &-button{
+    &-button {
         margin-left: 43px;
         background-color: $yellow;
         padding: 18px 33px 18px 29px;
         font-weight: 500;
         font-size: 14px;
-        color: #032F57;
+        color: #032f57;
+    }
+}
+
+// start problems
+
+.problems {
+    
+    .title-second {
+        padding-left: 10px;
+        margin-bottom: 75px;
+    }
+    &__yellow-box {
+        background-color: $yellow;
+        width: 807px;
+        height: 421px;
+        position: relative;
+    }
+}
+
+.problems__top {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 1679px;
+    height: 549px;
+    position: relative;
+    &-inner {
+        padding: 40px 44px 33px 46px;
+        position: absolute;
+        background-color: #fff;
+        left: 23px;
+        bottom: 18px;
+        width: 807px;
+        height: 421px;
+    }
+    &-list {
+        column-count: 2;
+    }
+    &-item {
+        display: flex;
+    }
+    &-text {
+        max-width: 273px;
+        width: 100%;
+        color: #000;
+    }
+    &-svg {
+        margin-right: 25px;
+        width: 35px;
+        height: 35px;
+    }
+    &-box{
+        position: absolute;
+        left: 558px;
+        top: 150px;
+    }
+}
+
+
+.problems__services{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 1679px;
+    height: 1082px;
+    padding: 161px  320px 95px 75px;
+    &-title{
+        display: flex;
+        align-items: center;
+    }
+    .title-second{
+        margin-right: 56px;
+        max-width: 550px;
+    }
+    &-content{
+        display: flex;
     }
 }
