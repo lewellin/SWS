@@ -100,6 +100,9 @@
         color: #fff;
         font-size: 16px;
     }
+    &-input:focus{
+        border: 0px;
+    }
     &-button {
         margin-left: 43px;
         background-color: $yellow;
@@ -147,13 +150,14 @@
     }
     &-item {
         display: flex;
+        margin-bottom: 35px;
     }
     &-text {
         max-width: 273px;
         width: 100%;
         color: #000;
     }
-    &-svg {
+    &-img {
         margin-right: 25px;
         width: 35px;
         height: 35px;
@@ -172,16 +176,93 @@
     background-size: cover;
     width: 1679px;
     height: 1082px;
-    padding: 161px  320px 95px 75px;
+    padding: 161px  269px 95px 75px;
     &-title{
         display: flex;
         align-items: center;
+        margin-bottom: 50px;
     }
     .title-second{
         margin-right: 56px;
         max-width: 550px;
+        margin-bottom: 100px;
     }
     &-content{
         display: flex;
+    }
+    &-link{
+        font-size: 20px;
+        color: #000;
+    }
+    &-items{
+        margin-right: 55px;
+    }
+    &-item{
+        padding: 34px 35px 40px 100px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        border-top: 1px dashed #999999;
+    }
+    &-item:last-child{
+        border-bottom: 1px dashed #999999;
+    }
+    &-img{
+        position: absolute;
+        left: 0;
+    }
+}
+
+.problems__description{
+    width: 806px;
+    height: 600px;
+    &-item{
+        background: rgba(196, 196, 196, 0.5);
+        padding: 23px 25px 100px 40px;
+    }
+    &-box{
+
+    }
+    &-top{
+        display: flex;
+        align-items: center;
+        margin-bottom: 100px;
+    }
+    .title-second{
+        margin-bottom: 27px;
+        margin-right: 0;
+        line-height: 39px;
+        padding-left: 0;
+    }
+    &-link{
+        background-color: $yellow;
+        text-align: center;
+        padding: 18px 65px;
+        font-weight: 500;
+        font-size: 14px;
+        color: #032F57;
+        margin-top: 27px;
+    }
+    &-img{
+      margin-right: 100px;
+    }
+    &-inner{
+        display: flex;
+    }
+    &-method{
+        margin-right: 40px;
+    }
+    &-text{
+        max-width: 340px;
+        font-size: 20px;
+        line-height: 26px;
+        color: #000;
+    }
+    .title{
+        margin-bottom: 30px;
+        &__main{
+            
+            color: #032F57;
+        }
     }
 }
