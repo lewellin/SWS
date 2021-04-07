@@ -7,7 +7,6 @@ const uglify        = require('gulp-uglify-es').default;
 const autoprefixer  = require('gulp-autoprefixer');
 const imagemin      = require('gulp-imagemin');
 const del           = require('del');
-const slick         = require('slick-carousel');
 
 
 function browsersync() {
@@ -42,7 +41,9 @@ function images() {
 
 function scripts() {
   return src([
+    
     'node_modules/jquery/dist/jquery.js',
+    
     'app/js/main.js'
   ])
     .pipe(concat('main.min.js'))

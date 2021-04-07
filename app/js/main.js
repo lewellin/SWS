@@ -4,12 +4,12 @@ $(function () {
         slidesToScroll: 1,
         arrows: false,
         fade: true,
-        asNavFor: '.slider-nav'
+        asNavFor: '.problems__services-list'
       });
       $('.problems__services-list').slick({
         slidesToShow: 6,
         slidesToScroll: 0,
-        asNavFor: '.slider-for',
+        asNavFor: '.problems__description',
 
       });
 })
